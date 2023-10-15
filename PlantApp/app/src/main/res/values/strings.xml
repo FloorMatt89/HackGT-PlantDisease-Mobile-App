@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">matthew_s_application3</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_lant_md">lant
+MD</string>
+<string name="msg_grow_and_keep_t">Grow and keep track of your garden!</string>
+<string name="lbl_health_status">Health Status</string>
+<string name="lbl_plant_diseases">plant diseases</string>
+<string name="msg_the_goal_of_pla">
+The goal of Plant ID is to help beginner level gardeners identify </string>
+<string name="lbl_grow">GROW</string>
+<string name="msg_check_for_plant"> Check For Plant Disease</string>
+<string name="lbl_return_to_menu">Return to Menu</string>
+<string name="lbl_scan_plant">Scan Plant</string>
+<string name="lbl_healthy">healthy</string>
+<string name="lbl_next">Next</string>
+<string name="msg_continue_to_mai">Continue To Main Menu</string>
+<string name="msg_mission_stateme2">Mission Statement
+</string>
+<string name="lbl_learn">LEARN</string>
+<string name="msg_identify_the_pl">Identify the plants in your garden!</string>
+<string name="msg_this_allows_e">. This allows everybody access to the knowledge of keeping their plants </string>
+<string name="lbl_identify">IDENTIFY</string>
+<string name="lbl">!</string>
+<string name="msg_learn_about_the">Learn about the health status of your plants!</string>
+<string name="msg_mission_stateme">Mission Statement
+
+The goal of Plant ID is to help beginner level gardeners identify plant diseases. This allows everybody access to the knowledge of keeping their plants healthy!</string>
+<string name="msg_when_you_scan_y">When you scan your plants they appear on this screen.</string>
+<string name="lbl_your_plants">Your Plants</string>
+<string name="lbl_your_garden">Your Garden</string>
+</resources>

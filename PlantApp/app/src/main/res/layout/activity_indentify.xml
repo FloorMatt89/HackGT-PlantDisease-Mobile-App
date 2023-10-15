@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="indentifyVM" type="com.matthewsapplication.app.modules.indentify.data.viewmodel.IndentifyVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearIndentify"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackindentifytexthe"
+            android:layout_height="@dimen/_327pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_94pxv" android:layout_width="@dimen/_281pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtIndentifyTextHe"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_35pxh"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{indentifyVM.indentifyModel.txtIndentifyTextHe}"
+                style="@style/txtUrbanistromanbold45" tools:text="@string/lbl_identify"/>
+            <ImageView android:id="@+id/imageManifyingGlass"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_235pxh"
+                android:layout_marginBottom="@dimen/_43pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="@dimen/_193pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_manifyingglass}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_manifyingglass"/>
+            <ImageView android:id="@+id/imageSimplePlantThre"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_160pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_151pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_simpleplantthre}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_simpleplantthre"/>
+        </FrameLayout>
+        <TextView android:id="@+id/txtIdentifyTextPar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_88pxh"
+            android:layout_marginStart="@dimen/_88pxh"
+            android:layout_marginTop="@dimen/_45pxv"
+            android:layout_width="wrap_content"
+            android:text="@{indentifyVM.indentifyModel.txtIdentifyTextPar}"
+            style="@style/txtUrbanistromanregular30" tools:text="@string/msg_identify_the_pl"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearPositionThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_85pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageSlideTHREETHREE"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_slideonetwo"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_slideonetwo"/>
+            <ImageView android:id="@+id/imageSlideTHREEFOUR"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_slideonetwo"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_slideonetwo"/>
+            <ImageView android:id="@+id/imageSlideTHREEFIVE"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_width="@dimen/_29pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_slideonethree"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_slideonethree"/>
+            <ImageView android:id="@+id/imageSlideTHREEONE"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_slideonetwo"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_slideonetwo"/>
+            <ImageView android:id="@+id/imageSlideTHREETWO"
+                android:layout_height="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_38pxh"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_slideonetwo"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_slideonetwo"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnNext"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_next" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_next"/>
+    </LinearLayout>
+</layout>

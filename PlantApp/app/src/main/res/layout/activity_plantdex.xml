@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="plantdexVM" type="com.matthewsapplication.app.modules.plantdex.data.viewmodel.PlantdexVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearPlantdex"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtGardenText"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{plantdexVM.plantdexModel.txtGardenText}"
+            style="@style/txtUrbanistromanbold50" tools:text="@string/lbl_your_garden"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescriptionText"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:text="@{plantdexVM.plantdexModel.txtDescriptionText}"
+            style="@style/txtUrbanistromanbold15" tools:text="@string/msg_when_you_scan_y"/>
+        <FrameLayout android:id="@+id/frameStackhorizontalline"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_554pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_375pxh">
+            <View android:background="@color/black_900"
+                android:id="@+id/lineHorizontalLine"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_375pxh"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineVerticalLine"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_554pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh" android:layout_width="@dimen/_1pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPlantCollection"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{plantdexVM.plantdexModel.txtPlantCollection}"
+                style="@style/txtUrbanistromanbold15"
+                textUnderline="true" tools:text="@string/lbl_your_plants"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPlantHealth"
+                android:layout_gravity="top|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_49pxh"
+                android:layout_marginStart="@dimen/_49pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{plantdexVM.plantdexModel.txtPlantHealth}"
+                style="@style/txtUrbanistromanbold15"
+                textUnderline="true" tools:text="@string/lbl_health_status"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnReturnToMenu"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="@dimen/_161pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_9pxh"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_return_to_menu"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/lbl_return_to_menu"/>
+    </LinearLayout>
+</layout>

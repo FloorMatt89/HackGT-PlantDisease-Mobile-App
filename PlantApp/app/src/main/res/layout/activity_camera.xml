@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cameraVM" type="com.matthewsapplication.app.modules.camera.data.viewmodel.CameraVM"/>
+    </data>
+    <RelativeLayout android:gravity="center_horizontal"
+        android:id="@+id/linearCamera"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnScanPlant"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_355pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_25pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_25pxv" android:singleLine="true"
+            android:text="@string/lbl_scan_plant"
+            android:textAllCaps="false" style="@style/btnSolidRounded_3" tools:text="@string/lbl_scan_plant"
+            tools:ignore="VisualLintButtonSize,VisualLintOverlap" />
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtCameraButton"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_89pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20pxv"
+            android:paddingStart="@dimen/_22pxh"
+            android:paddingTop="@dimen/_30pxv" android:singleLine="true"
+            android:text="@{cameraVM.cameraModel.txtCameraButton}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_return_to_menu"
+            tools:ignore="RtlSymmetry,VisualLintOverlap" />
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+    </RelativeLayout>
+</layout>
